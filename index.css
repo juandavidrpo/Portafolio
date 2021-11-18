@@ -1,0 +1,93 @@
+body {
+  font-family: "poppins";
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  margin-right: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+}
+
+.container {
+  max-width: 1920;
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  background: aqua;
+  height: 100vh;
+}
+
+/* Seccion sobre mi */
+
+.icons img {
+  margin: 8px;
+  width: 50px;
+}
+
+.icons img:hover {
+  transform: scale(1.1);
+}
+
+.container-title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.container-about {
+    width: 50%;
+}
+
+.container-about p {
+    font-size: 20px;
+}
+
+.imgprofile {
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+
+
+/* seccion proyectos */
+
+.container-title-project {
+    text-align: center;
+}
+
+.container-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projects {
+    width: 25%;
+    background: blue;
+}
+
