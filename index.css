@@ -16,7 +16,7 @@ li {
 
 a {
   text-decoration: none;
-  color: grey;
+  color: rgb(37, 37, 37);
 }
 
 .menu {
@@ -37,7 +37,6 @@ a {
 
 header {
   background: aqua;
-  height: 100vh;
 }
 
 /* Seccion sobre mi */
@@ -51,43 +50,171 @@ header {
   transform: scale(1.1);
 }
 
-.container-title {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 100px;
+.container-first-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
 }
 
 .container-about {
-    width: 50%;
+  width: 50%;
 }
 
 .container-about p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .imgprofile {
-    width: 300px;
-    border-radius: 10px;
+  width: 300px;
+  border-radius: 10px;
 }
-
-
-
 
 /* seccion proyectos */
 
-.container-title-project {
-    text-align: center;
+.container-title {
+  text-align: center;
+}
+
+.container-title h3 {
+  font-size: 40px;
 }
 
 .container-projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .projects {
-    width: 25%;
-    background: blue;
+  width: 25%;
+  padding: 50px 38px 50px 38px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  color: white;
 }
 
+.violeta {
+  background: #5055df;
+}
+
+.celeste {
+  background: #40a8fa;
+}
+
+.projects h4 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.button {
+  float: right;
+  margin-top: 30px;
+  color: white;
+  background: cornflowerblue;
+  padding: 20px 40px 20px 40px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background: blue;
+}
+
+.projects p {
+  font-size: 18px;
+  height: 120px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.img {
+  width: 300px;
+  height: 350px;
+  border-radius: 5px;
+}
+
+/* tecnologias */
+
+.icon-tech {
+  background: aqua;
+  border-radius: 10px;
+  padding: 30px 18px 30px 18px;
+}
+
+/* footer */
+
+footer {
+  background: cornflowerblue;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.icon-footer {
+  width: 50px;
+  margin: 6px;
+}
+
+.icon-footer:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+  nav {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    background: #5cb8ff;
+    width: 100%;
+    display: none;
+  }
+
+  nav .list {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 50px;
+    
+  }
+
+  .container-first-title {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  h1 {
+    font-size: 23px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .container-about {
+    width: 90%;
+  }
+
+  .container-about p {
+    font-size: 13px;
+  }
+
+  .container-projects {
+    flex-direction: column;
+  }
+  
+  .projects {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  .img {
+    width: 85%;
+  }
+}

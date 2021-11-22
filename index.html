@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="index.css">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <script src="script.js"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+   <!--  <script src="script.js"></script> -->
     <title>Potafolio</title>
   </head>
   <body>
-    <!-- HEADER -->
+    <!-- Sobre mi -->
 
     <header>
       <div class="container">
         <div class="menu">
+          <img class="menu-icon" src="/icon/menu.png">
           <a href="#" class="logo">Juan David</a>
           <nav>
             <ul class="list">
@@ -30,7 +28,7 @@
           </nav>
         </div>
 
-        <div class="container-title">
+        <div class="container-first-title">
           <img class="imgprofile" src="photo/photo.jpg" alt="Juan David">
           <div class="container-about">
           
@@ -38,7 +36,7 @@
           <h2>Ingeniero Informatico</h2>
 
           <p>
-            Soy desarrollador junior, tengo conocimientos en front- end aplicados
+            Soy desarrollador junior, tengo conocimientos en front-end aplicados
             en proyectos propios, me gusta aprender de los demás, busco crecer
             profesionalmente al igual que lograr productos finales que cumplan con
             los requerimientos de los clientes.
@@ -46,54 +44,109 @@
 
           <div class="icons">
             <a target="_blank" href="https://github.com/juandavidrpo">
-              <img src="icon/icon-github.png" alt=""></a>
+              <img src="icon/icon-github.png" alt="github"></a>
 
             <a target="_blank" href="https://linkedin.com/in/juan-david-rojas-restrepo/">
-              <img src="icon/icon-linkedin.png" alt=""></a>
+              <img src="icon/icon-linkedin.png" alt="linkedin"></a>
 
             <a target="_blank"
-              href="https://linkedin.com/in/juan-david-rojas-restrepo/">
-              <img src="icon/email.png" alt=""></a>
+              href="mailto:juandavid1527@gmail.com">
+              <img src="icon/email.png" alt="email"></a>
 
             <a target="_blank" href="https://linkedin.com/in/juan-david-rojas-restrepo">
-              <img src="icon/cv.png" alt=""></a>
+              <img src="icon/cv.png" alt="cv"></a>
           </div>
-
-          
         </div>
         </div>
       </div>
     </header>
+  
+    <!-- Proyectos -->
 
-
-    <section>
-      <div class="container-title-project">
+    <section> 
+      <div class="container-title">
         <h3>Proyectos</h3>
 
           <div class="container-projects">
-            <div class="projects">
+            <div class="projects violeta">
               <h4>Ahorcado</h4>
-                <p>Descripcion...</p>
+                <p>Divertido juego del ahorcado desarrollado con Angular</p>
+                <a target="_blank" href="https://github.com/juandavidrpo">
+                <img class="img" src="photo/Ahorcado.png" loading='lazy'></a>
+                <li><a class="button" target="_blank" href="#">Ver codigo</a></li>
             </div>
 
-            <div class="projects">
+            <div class="projects celeste">
               <h4>Galeria</h4>
-                <p>Descripcion...</p>
+                <p>Galeria realizada con HTML, CSS y javascript</p>
+                <a target="_blank" href="https://github.com/juandavidrpo">
+                <img class="img" src="photo/gallery.png" loading='lazy'></a>
+                <li><a class="button" target="_blank" href="#">Ver codigo</a></li>
             </div>
 
-            <div class="projects">
+            <div class="projects violeta">
               <h4>Clima</h4>
-                <p>Descripcion...</p>
+                <p>Aplicacion del clima desarrollada con React y usando la api de 
+                  weather</p>
+                  <a target="_blank" href="https://github.com/juandavidrpo">
+                <img class="img" src="photo/weather.png" loading='lazy'></a>
+                <li><a class="button" target="_blank" href="#">Ver codigo</a></li>
             </div>
 
-            <div class="projects">
+            <div class="projects celeste">
               <h4>Pronto...</h4>
-                <p>Descripcion...</p>
+                <p></p>
+                
             </div>
           </div>
       </div>  
     </section>
 
+<!-- Tecnologias -->
+
+<section>
+  <div class="container-title">
+    <h3>Tecnologias</h3>
+      <img class="icon-tech" src="/icon/icon-html.png">
+      
+      <img class="icon-tech" src="/icon/icon-css.png">
+      
+      <img class="icon-tech" src="/icon/icon-javascript.png">
+     
+      <img class="icon-tech" src="/icon/icon-git.png">
+      
+      <img class="icon-tech" src="/icon/icon-github64.png">
+      
+      <img class="icon-tech" src="/icon/icon-pb.png">
+  </div>
+</section>
+
+<!-- Footer -->
+
+<footer>
+    <div class="networks">
+      <a target="_blank" href="https://github.com/juandavidrpo">
+        <img class="icon-footer" src="icon/icon-github.png" alt="github"></a>
+
+      <a target="_blank" href="https://linkedin.com/in/juan-david-rojas-restrepo/">
+        <img class="icon-footer" src="icon/icon-linkedin.png" alt="linkedin"></a>
+
+      <a target="_blank" href="mailto:juandavid1527@gmail.com">
+        <img class="icon-footer" src="icon/email.png" alt="email"></a>
+        
+    </div>
+    <div class="parrafo">
+      <p> Juan David Rojas Restrepo | juandavid1527@gmail.com</p>
+    </div>
+</footer>
+
+<script>
+    $('.menu-icon').click(function() {
+      $('header nav').slideToggle();
+    })
+
+  </script>
+    
     <!-- <div class="imgprofile">
     <img src="photo/photo.jpg">
 </div> -->
