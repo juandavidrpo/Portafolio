@@ -4,39 +4,48 @@ body {
   padding: 0;
 }
 
-.logo {
-  font-size: 20px;
+
+.nav-bar {
+  background: aqua;
+  padding: 10px;
+  display: block;
+  color: gray;
+  cursor: pointer;
+  font-size: 1.5em;
+  width: 100%;
+  
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: aqua;
+  width: 100%;
+  margin-left: -100%;
+  transition: all 0.1s;
+  justify-content: center;
+}
+
+.menu__link {
+  display: block;
+  color: black;
+  padding: 10px;
+  font-size: 1.2em;
   text-decoration: none;
+ 
+}
+
+.menu__link:hover {
+  background: cornflowerblue;
 }
 
 li {
   list-style: none;
-  margin-right: 25px;
 }
 
 a {
   text-decoration: none;
-  color: rgb(37, 37, 37);
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.list {
-  display: flex;
-}
-
-.container {
-  max-width: 1920;
-  width: 90%;
-  margin: auto;
-}
-
-header {
-  background: aqua;
 }
 
 /* Seccion sobre mi */
@@ -109,11 +118,12 @@ header {
 
 .button {
   float: right;
-  margin-top: 30px;
+  margin-top: 10%;
   color: white;
   background: cornflowerblue;
-  padding: 20px 40px 20px 40px;
+  padding: 5%;
   border-radius: 5px;
+
 }
 
 .button:hover {
@@ -130,17 +140,26 @@ header {
 }
 
 .img {
-  width: 300px;
-  height: 350px;
+  width: 70%;
   border-radius: 5px;
+  object-fit: contain;
 }
 
 /* tecnologias */
 
-.icon-tech {
-  background: aqua;
-  border-radius: 10px;
-  padding: 30px 18px 30px 18px;
+.container-title {
+ text-align: center;
+}
+
+.container-icons-tech  {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+h4 {
+  margin: 0;
 }
 
 /* footer */
@@ -161,33 +180,38 @@ footer {
   transform: scale(1.1);
 }
 
+.view {
+  margin-left: 0;
+}
+
 /* Responsive */
 
-@media (max-width: 800px) {
-  nav {
-    position: absolute;
-    top: 50px;
-    left: 0px;
-    background: #5cb8ff;
-    width: 100%;
+@media (min-width:800px) {
+  .nav-bar {
     display: none;
   }
-
-  nav .list {
-    flex-direction: column;
+  .menu {
+    margin-left: 0;
     display: flex;
-  }
-
-  .menu-icon {
-    display: block;
-    width: 50px;
     
   }
+}
 
+@media (max-width: 800px) {
   .container-first-title {
     flex-direction: column;
     margin-top: 10px;
   }
+  
+  .container-icons-tech{
+    flex-direction: column;
+    
+  }
+  
+  h4 {
+    margin-bottom: 20px;
+  }
+
   h1 {
     font-size: 23px;
   }
@@ -212,9 +236,5 @@ footer {
     width: 70%;
     margin: auto;
     margin-bottom: 15px;
-  }
-
-  .img {
-    width: 85%;
   }
 }

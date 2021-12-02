@@ -5,35 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="index.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-   <!--  <script src="script.js"></script> -->
     <title>Potafolio</title>
   </head>
   <body>
-    <!-- Sobre mi -->
 
-    <header>
-      <div class="container">
-        <div class="menu">
-          <img class="menu-icon" src="/icon/menu.png">
-          <a href="#" class="logo">Juan David</a>
-          <nav>
-            <ul class="list">
-              <li><a href="#about">Sobre mi</a></li>
-              <li><a href="#projects">Proyectos</a></li>
-              <li><a href="#Tech">Tecnologias</a></li>
-              <li><a href="#contact">Contacto</a></li>
-            </ul>
-          </nav>
-        </div>
+<!-- Menu-->
+
+<span class="nav-bar" id="btnMenu">
+  <i class="fas fa-bars"></i></span>
+  <nav class="main-nav">
+    <ul class="menu" id="menu">
+      <script src="script.js"></script>
+      <!-- <a href="#" class="logo">Juan David</a> -->
+      <li class="menu__item"><a href="" class="menu__link">Sobre mí</a></li>
+      <li class="menu__item"><a href="" class="menu__link">Proyectos</a></li>
+      <li class="menu__item"><a href="" class="menu__link">Tecnologias</a></li>
+      <li class="menu__item"><a href="" class="menu__link">Contacto</a></li>
+    </ul>
+  </nav>  
+  
+  
+
+<!-- Sobre mi -->
 
         <div class="container-first-title">
           <img class="imgprofile" src="photo/photo.jpg" alt="Juan David">
           <div class="container-about">
           
           <h1>Juan David Rojas Restrepo</h1>
-          <h2>Ingeniero Informatico</h2>
+          <h2>Ingeniero Informático</h2>
 
           <p>
             Soy desarrollador junior, tengo conocimientos en front-end aplicados
@@ -61,10 +63,10 @@
       </div>
     </header>
   
-    <!-- Proyectos -->
+<!-- Proyectos -->
 
     <section> 
-      <div class="container-title">
+      <div class="container-title" id="projects">
         <h3>Proyectos</h3>
 
           <div class="container-projects">
@@ -104,21 +106,40 @@
 
 <!-- Tecnologias -->
 
-<section>
-  <div class="container-title">
-    <h3>Tecnologias</h3>
-      <img class="icon-tech" src="/icon/icon-html.png">
-      
-      <img class="icon-tech" src="/icon/icon-css.png">
-      
-      <img class="icon-tech" src="/icon/icon-javascript.png">
-     
-      <img class="icon-tech" src="/icon/icon-git.png">
-      
-      <img class="icon-tech" src="/icon/icon-github64.png">
-      
-      <img class="icon-tech" src="/icon/icon-pb.png">
-  </div>
+<div class="container-title" id="tech">
+  <h3>Tecnologias</h3>
+</div>
+
+<section class="container-icons-tech" >
+  <section>
+    <img class="icon-tech" src="/icon/icon-html.png">
+    <h4 class="icon-tech">HTML</h4>
+  </section>
+
+  <section>
+    <img class="icon-tech" src="/icon/icon-css.png">
+    <h4 class="icon-tech">CSS</h4>
+  </section>
+
+  <section>
+    <img class="icon-tech" src="/icon/icon-javascript.png">
+    <h4 class="icon-tech">Javascript</h4>
+  </section>
+
+  <section>
+    <img class="icon-tech" src="/icon/icon-git.png">
+    <h4 class="icon-tech">Git</h4>
+  </section>
+
+  <section>
+    <img class="icon-tech" src="/icon/icon-github64.png">
+    <h4 class="icon-tech">Github</h4>
+  </section>
+
+  <section>
+    <img class="icon-tech" src="/icon/icon-pb.png">
+    <h4 class="icon-tech">Power BI</h4>
+  </section>
 </section>
 
 <!-- Footer -->
@@ -139,18 +160,5 @@
       <p> Juan David Rojas Restrepo | juandavid1527@gmail.com</p>
     </div>
 </footer>
-
-<script>
-    $('.menu-icon').click(function() {
-      $('header nav').slideToggle();
-    })
-
-  </script>
-    
-    <!-- <div class="imgprofile">
-    <img src="photo/photo.jpg">
-</div> -->
-
-    <!-- <section class="zone1"></section> -->
-  </body>
+</body>
 </html>

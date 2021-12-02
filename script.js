@@ -1,6 +1,5 @@
-/*  window.addEventListener("scroll", function(){
-  var header = document.querySelector("header")
-  header.classList.toggle("down", window.scrollY > 0)
+const btnMenu = document.querySelector("#btnMenu")
+const menu = document.querySelector("#menu")
+btnMenu.addEventListener("click", function(){
+  menu.classList.toggle("view")
 })
-
- */
