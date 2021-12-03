@@ -18,19 +18,16 @@
   <nav class="main-nav">
     <ul class="menu" id="menu">
       <script src="script.js"></script>
-      <!-- <a href="#" class="logo">Juan David</a> -->
-      <li class="menu__item"><a href="" class="menu__link">Sobre mí</a></li>
-      <li class="menu__item"><a href="" class="menu__link">Proyectos</a></li>
-      <li class="menu__item"><a href="" class="menu__link">Tecnologias</a></li>
-      <li class="menu__item"><a href="" class="menu__link">Contacto</a></li>
+      <li class="menu__item"><a href="#aboutme" class="menu__link">Sobre mí</a></li>
+      <li class="menu__item"><a href="#projects" class="menu__link">Proyectos</a></li>
+      <li class="menu__item"><a href="#tech" class="menu__link">Tecnologias</a></li>
+      <li class="menu__item"><a href="#networks" class="menu__link">Contacto</a></li>
     </ul>
   </nav>  
-  
-  
 
 <!-- Sobre mi -->
 
-        <div class="container-first-title">
+        <div class="container-first-title" id="aboutme">
           <img class="imgprofile" src="photo/photo.jpg" alt="Juan David">
           <div class="container-about">
           
@@ -38,7 +35,7 @@
           <h2>Ingeniero Informático</h2>
 
           <p>
-            Soy desarrollador junior, tengo conocimientos en front-end aplicados
+            Desarrollador junior, con enfasis en front-end aplicado
             en proyectos propios, me gusta aprender de los demás, busco crecer
             profesionalmente al igual que lograr productos finales que cumplan con
             los requerimientos de los clientes.
@@ -73,32 +70,27 @@
             <div class="projects violeta">
               <h4>Ahorcado</h4>
                 <p>Divertido juego del ahorcado desarrollado con Angular</p>
-                <a target="_blank" href="https://github.com/juandavidrpo">
+                <a target="_blank" href="https://ahorcado-ang.web.app">
                 <img class="img" src="photo/Ahorcado.png" loading='lazy'></a>
-                <li><a class="button" target="_blank" href="#">Ver codigo</a></li>
+                <li><a class="button" target="_blank" href="https://github.com/juandavidrpo/Ahorcado-Angular">Ver codigo</a></li>
             </div>
 
             <div class="projects celeste">
               <h4>Galeria</h4>
                 <p>Galeria realizada con HTML, CSS y javascript</p>
-                <a target="_blank" href="https://github.com/juandavidrpo">
+                <a target="_blank" href="https://galeria-js.web.app">
                 <img class="img" src="photo/gallery.png" loading='lazy'></a>
-                <li><a class="button" target="_blank" href="#">Ver codigo</a></li>
+                <li><a class="button" target="_blank" href="https://github.com/juandavidrpo/Galeria">Ver codigo</a></li>
             </div>
 
             <div class="projects violeta">
               <h4>Clima</h4>
                 <p>Aplicacion del clima desarrollada con React y usando la api de 
                   weather</p>
-                  <a target="_blank" href="https://github.com/juandavidrpo">
+                  <a target="_blank" href="https://weather-rea.web.app">
                 <img class="img" src="photo/weather.png" loading='lazy'></a>
-                <li><a class="button" target="_blank" href="#">Ver codigo</a></li>
+                <li><a class="button" target="_blank" href="https://github.com/juandavidrpo/Weather-React">Ver codigo</a></li>
             </div>
-
-            <div class="projects celeste">
-              <h4>Pronto...</h4>
-                <p></p>
-                
             </div>
           </div>
       </div>  
@@ -122,8 +114,8 @@
   </section>
 
   <section>
-    <img class="icon-tech" src="/icon/icon-javascript.png">
-    <h4 class="icon-tech">Javascript</h4>
+    <img class="icon-tech" src="/icon/icon-js.png">
+    <h4 class="icon-tech">JavaScript</h4>
   </section>
 
   <section>
@@ -132,8 +124,8 @@
   </section>
 
   <section>
-    <img class="icon-tech" src="/icon/icon-github64.png">
-    <h4 class="icon-tech">Github</h4>
+    <img class="icon-tech" src="/icon/icon-sql.png">
+    <h4 class="icon-tech">SQL Server</h4>
   </section>
 
   <section>
@@ -144,7 +136,7 @@
 
 <!-- Footer -->
 
-<footer>
+<footer id="networks">
     <div class="networks">
       <a target="_blank" href="https://github.com/juandavidrpo">
         <img class="icon-footer" src="icon/icon-github.png" alt="github"></a>
@@ -154,7 +146,6 @@
 
       <a target="_blank" href="mailto:juandavid1527@gmail.com">
         <img class="icon-footer" src="icon/email.png" alt="email"></a>
-        
     </div>
     <div class="parrafo">
       <p> Juan David Rojas Restrepo | juandavid1527@gmail.com</p>
